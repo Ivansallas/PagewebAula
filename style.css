@@ -1,81 +1,132 @@
-header{
-    background: #BBBBBB;
-    padding: 20px 0;
+/* === FORMATAÇÃO PADRÃO DA PÁGINA === */
+:root {
+  --cor-primaria: #cccccc;
+  --cor-secundaria: #f1e7e7;
+  --cor-textTitle: #0717ee;
+  --tamanho-fonte: 20px;
+  --tamanho-fonte-title: 25px;
 }
-.caixa{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
+header {
+  background: #bbbbbb;
 }
-nav{
-    position: absolute;
-    right: 110px;
-    top: 0;
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  
 }
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-    
+nav {
+  position: absolute;
+  right: 110px;
+  top: 0;
 }
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
 }
-nav a:hover{
-    color: #5a0beb;
-    text-decoration: underline;
-}   
-.produtos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #5a0beb;
+  text-decoration: underline;
+}
+.titulo {
+  color: var(--cor-textTitle);
+  font-size: var(--tamanho-fonte-title);
+  text-align: center;
+}
+.principal {
+  background-color: var(--cor-primaria);
+  color: black;
+  font-size: var(--tamanho-fonte);
+  text-align: center;
+  padding: 30px;
+}
+/* arquivo banner */
+.image-banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.beneficios {
+    display: flex;
+    flex-direction: row; /* Alinha os itens em linha */
+    align-items: center; /* Mantém os itens alinhados */
+    justify-content: space-evenly; /* Evita grandes espaçamentos */
+    gap: 1px; /* Diminui o espaço entre os elementos */
+}
+
+.beneficios ul {
+    margin: 0;
+    padding: 10px;
+    font-size: var(--tamanho-fonte);
+}
+
+.imagem-beneficios {
+    margin: 10px;
+    padding: 0;
+    width: 45%;
+    max-width: 800px;
+}
+/* arquivo banner */
+
+/* arquivo produto */
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 .produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
 }
 .produtos li:hover {
-    border-color: #5a0beb;
+  border-color: #5a0beb;
 }
 .produtos li:active {
-    border-color: #5a0beb;
+  border-color: #5a0beb;
 }
 .produtos li:hover h2 {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 .produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .produto-descricao {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .produto-preco {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
 }
-footer{
-    text-align: center;
-    background: url("imagens/bg.jpg");
-    padding: 40px 0;
-    color: #ffffff;
+/* arquivo produto */
+
+footer {
+  text-align: center;
+  background: url("imagens/bg.jpg");
+  padding: 40px 0;
+  color: #ffffff;
 }
-.copyrigth{
-    color: #ffffff;
-    font-size: 18px;
-    margin: 20px 0 0;
+.copyright {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 20px 0 0;
 }
+/* === FIM DA FORMATAÇÃO PADRÃO DA PÁGINA === */
